@@ -18,6 +18,11 @@ array : substantivo no plural do que agrupa
 função: verbo_Imperativo+Substantivo,  pense: QUANDO FOR CHAMADA ELA VAI ???... a resposta sera o nome um verboImperativo: exemplo : somar(), calcular(), reduzir(),
 tutorial : https://fb.watch/nfhSF12MzR/?mibextid=Nif5oz
 
+> nomeacao:
+  1. nome_arquivo: SnackCase : porque pode ser o nome do artefato principal dele
+
+
+
 # paradigma_codificao:
   possiveis: [ declarativo, imperativo ]
 
@@ -48,6 +53,9 @@ possíveis: [
 ### TIPO
 > conceito:
 todo tipo é representado por valor e todos tem seu valor padraoPorDefault exemplo_universal : texto="", número = 0, lógico = false, nulos = null, inesistente = indefinido,
+
+> possíveis:
+Primitivos da linguagem, e os criados por Gerador de Objeto ex: Class, struct, FactoryFunctions
 
 > any_qualquer_formato:
 para descobrir o tipoQualquerFormato é só ver o tipo da funcao que printa no console ja que ela aceita qualquer tipo, em ts é any, no java Any, em golang tambem tem o any ou legado que era interface{}  /interface vazia/,
