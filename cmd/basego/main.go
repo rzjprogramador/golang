@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/rzjprogramador/golang/basego/variavel"
+	"github.com/rzjprogramador/golang/basego/valor"
 )
 
 func main() {
-	variavel.Execute()
+	valor.ExecuteDeclaracao()
+	valor.ExecuteTipos()
 	fmt.Print("Hello Golang")
 }

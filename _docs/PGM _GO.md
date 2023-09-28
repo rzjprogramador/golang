@@ -8,7 +8,9 @@ para descobrir o tipoQualquerFormato é só ver o tipo da funcao que printa no c
 string
 
 > numeros:
-somente_positivos: [ byte, uint (pega o padrao da amaquinaInUso), uint32, uint64 ,  ], positivos_e_negativos: [ int, float,]
+conceito: prefira inferir , assim ao setar e passar o mouse no artefato ele mostrará o tipo inferido.
+numeros_inteiros: int, quando somente positivo use uint (pega o padrao da amaquinaInUso 32 ou 64 bytes)
+numeros_decimais: float64 (pega o padrao da amaquinaInUso)
 
 > boleano:
 sim: true, nao: false
