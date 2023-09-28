@@ -1,5 +1,41 @@
 # PGM
 
+### linguagens:
+- Golang, aplicabilidade: Backend, top: 1, performance : Pc: bom, servidor: bom, alcance: amplo, desvantagem: comunidade baixa, vantagem: [ utilizado em Big Techs]
+-
+- Kotlin, aplicabilidade: [Backend, Interface ], top: 2, performance: Pc: médio, servidor: bom, alcance: amplo, desvantagem: [comunidade baixa, pc tem que ser potente, ], vantagem: [ utilizado em Big Techs]
+-
+- Typescript ,aplicabilidade: [Backend, Interface ], top: 2, performance: Pc: bom, servidor: bom,  alcance: web, server, desvantagem: [ não utilizado em Big Techs para backend, ], vantagem: [ utilizado em Start ups, médios negócios, ]
+-
+
+### ferramentas_programacao_universal:
+1. baseDominada( declaracoes( escrita mutável, leituraSomenteImutavel), funções, POO[ abstração, encapsulamento, polimorfismo, ],  Lopps, coleções, Api(resto, graphql ))
+2. opcional_recursos_da_linguagem(  )
+
+### nomeacoes :
+variáveis_e_objeto : substantivo,
+array : substantivo no plural do que agrupa
+função: verbo_Imperativo+Substantivo,  pense: QUANDO FOR CHAMADA ELA VAI ???... a resposta sera o nome um verboImperativo: exemplo : somar(), calcular(), reduzir(),
+tutorial : https://fb.watch/nfhSF12MzR/?mibextid=Nif5oz
+
+# paradigma_codificao:
+  possiveis: [ declarativo, imperativo ]
+
+3. imperativo: um legado verboso que diz como fazer passo a passo,
+4.
+5. declarativa: é moderno usa -se funções prontas da linguagem que já abstrairam e encapsularam o legado imperativo..
+6. tutoriais : https://youtube.com/shorts/WCpIbFOs0VQ?si=spr_LHkG49JNS1tS
+
+codificacao_conforme_comunicacao_IO_de_entrada_e_saida_do_dado:
+possíveis: [ code_Interno_Memoria_IO, code_Externo_Servidor_IO ],
+conceito:
+temos que ter o código natural para máquina entender e junto o código que faz o provedor inOut entender ex: Rest,  Graphql, então para cada instrução natural mapear reproduzir também a instrução para o provedorInOut entender,
+
+# IMPLEMENTACAO
+
+### principais_conceitos:
+- programe respostas resilientes de forma assincrona garantindo dar a resposta em segundos, minutos, horas ou dias depois mas entrega.
+
 ### contratos:
 conceito: toda declaracao é um contrato. narração: VAI TER ESTE FORMATO.
 possíveis: [
@@ -10,21 +46,23 @@ possíveis: [
 ]
 
 ### TIPO
+> conceito:
+todo tipo é representado por valor e todos tem seu valor padraoPorDefault exemplo_universal : texto="", número = 0, lógico = false, nulos = null, inesistente = indefinido,
+
 > any_qualquer_formato:
 para descobrir o tipoQualquerFormato é só ver o tipo da funcao que printa no console ja que ela aceita qualquer tipo, em ts é any, no java Any, em golang tambem tem o any ou legado que era interface{}  /interface vazia/,
 
-> texto_string:
+> texto_colecao_de_string:
 string
 
 > numeros:
-somente_positivos: [ byte, uint (pega o padrao da amaquinaInUso), uint32, uint64 ,  ], positivos_e_negativos: [ int, float,]
+inteiro, decimal
 
 > boleano:
 sim: true, nao: false
 
 > error:
-lib_golang: error, membros
-  - criar novo erro: error.new("mensagem texto")
+cada linguagem tem seu objeto error. temos que usar o objeto error da linguem e dele criar nosso novo error personalizado.
 
 ### ERROS_EXCECOES
 matar_execucao_programa: na maioria usam throw, em GO usa a funcao panic ( "message") recupera com a keyword recovery
