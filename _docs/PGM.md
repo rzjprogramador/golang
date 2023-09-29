@@ -94,6 +94,18 @@ atribuicao_de_funcao: é invocar chamar e argumentar se preciso.,
 atribuir_por_Composicao: é no contrato assinalar um campo  com valor de um outro Tipo personalizado e no uso dar como valor o objeto deste tipoPsrsonalizado como valor ao campo sob contrato.
   ]
 
+# FERRAMENTA PARA FUNCAO
+
+### DECISAO LIMITADA MAIS QUE 1 OPCAO
+> switch
+  Decisao_Interruptor_Switch
+  conceito: ao inves de fazer mais que 1 : if , if else - fazer então um switch quando tenho opções limitadas para tomar uma decisao.
+
+  passes_logicos: avalie o parametro e caso for o que passei, retorne isto. ..obs: naMelhorForma: posso analizar o parametro direto no caso.
+
+  default: tem que estar no mesmo escopo dos casos, e o tipo do default tem que ser o mesmo prometido na decalracao do metodo.
+
+
 ### LOOP
 loop_FOR_com_Closure : dentro do escopo de uma funcao posso usar o closure de uma variavel mutavel modificavel inicuando-a  com valor zero, acumulando novos valores a ela no for e usando closure retornar esta var que lembra onde ela se iniciou, o que lhe foi lhe foi atribuido e devolve seus novos valores.
 
