@@ -4,7 +4,7 @@ import "fmt"
 
 // Decisao_Interruptor_Switch
 
-func diaDaSemana1(numero int) string {
+func switch_Legado(numero int) string {
 	switch numero {
 	case 1:
 		return "Domingo"
@@ -29,7 +29,7 @@ func melhorSwitch_LogicaNoCaso(numero int) string {
 }
 
 func ExecuteDecisao_Interruptor_Switch() {
-	// fmt.Println(diaDaSemana1(1))
+	// fmt.Println(switch_Legado(1))
 	fmt.Println(melhorSwitch_LogicaNoCaso(2))
 }
 
