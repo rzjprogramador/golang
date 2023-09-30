@@ -4,6 +4,17 @@ import "fmt"
 
 // Decisao_Interruptor_Switch
 
+func melhorSwitch_LogicaNoCaso(numero int) string {
+	switch {
+	case numero == 1:
+		return "Domingo"
+	case numero == 2:
+		return "Segunda"
+	default:
+		return "nenhum destes vou devolver esta string"
+	}
+}
+
 func switch_Legado(numero int) string {
 	switch numero {
 	case 1:
@@ -15,17 +26,6 @@ func switch_Legado(numero int) string {
 		return "nenhum destes este pe o default caso nao caia em nenhum caso."
 	}
 
-}
-
-func melhorSwitch_LogicaNoCaso(numero int) string {
-	switch {
-	case numero == 1:
-		return "Domingo"
-	case numero == 2:
-		return "Segunda"
-	default:
-		return "nenhum destes vou devolver esta string"
-	}
 }
 
 func ExecuteDecisao_Interruptor_Switch() {
