@@ -16,6 +16,6 @@ func AddElementoALista() []uint {
 func FatiaSlicePorPosicaoInicioeFim() []uint {
 	listaNumeros := []uint{1, 10, 20, 30, 40, 50, 60, 70, 80}
 	lista3_5 := listaNumeros[3:6]
-	// obs: ele nao retoirna o ultimo sempre puxe um a mais.
+	// obs: ele nao retorna o ultimo sempre puxe um a mais.
 	return lista3_5
 }
