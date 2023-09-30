@@ -1,4 +1,6 @@
-package valor_agrupado
+package main
+
+import "fmt"
 
 // LISTA - SLICE - ARRAY SEM LIMITE
 
@@ -18,4 +20,8 @@ func FatiaSlicePorPosicaoInicioeFim() []uint {
 	lista3_5 := listaNumeros[3:6]
 	// obs: ele nao retorna o ultimo sempre puxe um a mais.
 	return lista3_5
+}
+
+func main() {
+	fmt.Println(FatiaSlicePorPosicaoInicioeFim())
 }

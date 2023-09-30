@@ -1,7 +1,0 @@
-// package valor
-
-// var lista := uint{ 10, 20, 30}
-
-// func parametrosDiversos(n ...uint) {
-
-// }

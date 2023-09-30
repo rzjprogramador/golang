@@ -1,8 +1,8 @@
-package ferramenta_metodos
+package main
 
 import "fmt"
 
-func Execute_FOR_com_Range() {
+func main() {
 	nomes := [3]string{"Rei", "Guga", "Leo"}
 
 	for _, valor := range nomes {
@@ -10,4 +10,5 @@ func Execute_FOR_com_Range() {
 		fmt.Println(valor)
 		// fmt.Println(indice, valor)
 	}
+	// fmt.Println("--------")
 }

@@ -1,4 +1,4 @@
-package ferramenta_metodos
+package main
 
 import "fmt"
 
@@ -15,20 +15,20 @@ func melhorSwitch_LogicaNoCaso(numero int) string {
 	}
 }
 
-func switch_Legado(numero int) string {
-	switch numero {
-	case 1:
-		return "Domingo"
-	case 2:
-		return "Segunda"
+// func switch_Legado(numero int) string {
+// 	switch numero {
+// 	case 1:
+// 		return "Domingo"
+// 	case 2:
+// 		return "Segunda"
 
-	default:
-		return "nenhum destes este pe o default caso nao caia em nenhum caso."
-	}
+// 	default:
+// 		return "nenhum destes este pe o default caso nao caia em nenhum caso."
+// 	}
 
-}
+// }
 
-func ExecuteDecisao_Interruptor_Switch() {
+func main() {
 	// fmt.Println(switch_Legado(1))
 	fmt.Println(melhorSwitch_LogicaNoCaso(2))
 }

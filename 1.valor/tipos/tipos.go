@@ -1,8 +1,8 @@
-package valor
+package main
 
 import "fmt"
 
-func ExecuteTipos() {
+func main() {
 	var texto string = "meu texto - aspas duplas obrigatoria" // valor_default: "" // string vazia
 	var numeroInteiroPositivo uint = 100                      // valor default 0
 	numeroDecimal := 100_000_000.5                            // valor_default: 0

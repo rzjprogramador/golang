@@ -1,3 +1,3 @@
-module github.com/rzjprogramador/golang
+module fundamentos_go
 
 go 1.20

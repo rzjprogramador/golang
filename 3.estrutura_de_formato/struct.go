@@ -1,4 +1,4 @@
-package estrutura_de_formato
+package main
 
 import "fmt"
 
@@ -14,9 +14,7 @@ func createEntidade(f FormatoEntidade) FormatoEntidade {
 	return f
 }
 
-func Execute_EstruturaDeFormato() {
-
+func main() {
 	reinaldo := createEntidade(request)
-
 	fmt.Println(reinaldo)
 }

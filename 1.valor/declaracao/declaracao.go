@@ -1,8 +1,8 @@
-package valor
+package main
 
 import "fmt"
 
-func ExecuteDeclaracao() {
+func main() {
 	var explicita_mutavel string = "valor1"
 	explicita_mutavel = "mudei o valor"
 	implicita_inferida_imutavel := "valor da implicita inferida"
