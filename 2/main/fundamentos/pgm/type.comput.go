@@ -1,6 +1,6 @@
 package pgm
 
-type Comput struct {
+type Comput_Fixa struct {
 	linguagem                 string
 	dado                      Dado
 	tipo                      Tipo

@@ -1,7 +1,6 @@
 package pgm
 
 type Pgm struct {
-	args   Args
-	comput Comput
+	args_rotativa Args_Rotativa
+	comput_fixa   Comput_Fixa
 }
-

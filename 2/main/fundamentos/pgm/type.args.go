@@ -1,6 +1,6 @@
 package pgm
 
-type Args struct {
+type Args_Rotativa struct {
 	linguagem  string
 	referencia Referencia
 }
@@ -9,5 +9,3 @@ type Referencia struct {
 	palavrasChaveReferencia PalavrasChaveReferencia
 	exemplo                 Exemplo
 }
-
-
