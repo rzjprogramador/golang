@@ -1,11 +1,20 @@
 package pgm
 
 type Comput_Fixa struct {
+	metodologias              Metodologias
 	linguagem                 string
 	dado                      Dado
 	tipo                      Tipo
 	funcao_gera_dado          Funcao_Gera_Dado
 	ferramentasComputacionais FerramentasFuncionais
+}
+
+type Metodologias struct {
+	metodologia_desenho_de_objeto Metodologia_Desenho_de_Objeto
+}
+
+type Metodologia_Desenho_de_Objeto struct {
+	metodologia_Args_e_Fixos string // criar subObjetoArgs para entradaPersonal e subObjetoFixo para dadosFixos
 }
 
 type Dado struct {
