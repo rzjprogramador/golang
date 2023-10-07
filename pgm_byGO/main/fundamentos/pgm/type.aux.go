@@ -11,3 +11,8 @@ type Conceito struct {
 type Exemplo struct {
 	exemplo string
 }
+
+type Diferencias_da_Linguagem struct {
+	temNaLinguagem Habilitado
+	ponteiro       Ponteiro
+}

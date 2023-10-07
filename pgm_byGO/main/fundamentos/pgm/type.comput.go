@@ -5,7 +5,7 @@ type Comput_Fixa struct {
 	dado                      Dado
 	tipo                      Tipo
 	funcao_gera_dado          Funcao_Gera_Dado
-	ferramentasComputacionais FerramentasComputacionais
+	ferramentasComputacionais FerramentasFuncionais
 }
 
 type Dado struct {
@@ -71,7 +71,7 @@ type Struct struct {
 	exemplo        Exemplo
 }
 
-type FerramentasComputacionais struct {
+type FerramentasFuncionais struct {
 	temNaLinguagem    Habilitado
 	atribuicao        Atribuicao
 	operacoes         Operacao_em_Funcao
