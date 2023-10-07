@@ -1,7 +1,0 @@
-// package main
-
-// var lista := uint{ 10, 20, 30}
-
-// func main(n ...uint) {
-
-// }
