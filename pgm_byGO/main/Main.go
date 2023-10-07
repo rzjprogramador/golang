@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/rzj/main/fundamentos"
+	fundamentos "github.com/rzj/main/fundamento_linguagens"
 )
 
 func main() {
