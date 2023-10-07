@@ -38,6 +38,8 @@ func main() {
 }
 
 /*
+Tipo_Personal_Novo
+
 ciclo_Logicos_Novo_TIPO :
 -- estrutura: [
 	- criar_Struct , exemplo: struct User
