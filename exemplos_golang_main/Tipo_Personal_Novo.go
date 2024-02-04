@@ -11,30 +11,55 @@ type User struct {
 	idade     uint
 }
 
+// a acao foi criada para string qualquer string
+func MinString(n string, min int) string {
+	if len(n) < min {
+		return fmt.Sprintf("ops menor que %d", min)
+	}
+	return n
+}
+
 // acoes { vincular a estrutura }
-func (u User) nomeCompleto() string {
+func (u User) NomeCompleto() string {
 	return fmt.Sprintf("%s %s TEXTO_LIVRE onde Quiser entre as variaveis ", u.nome, u.sobrenome)
 }
 
-func (u *User) fazAniversario() {
+func (u *User) FazAniversario() {
 	u.idade++
 }
 
-func (u *User) ehMaiorDeIdade() bool {
+func (u *User) EhMaiorDeIdade() bool {
 	if u.idade > 18 {
 		return true
 	}
 	return false
 }
 
+func montaObjetoUsuarioValido(u User) *User {
+	var usuario = User{
+		nome:      MinString(u.nome, 3),
+		sobrenome: u.sobrenome,
+		idade:     u.idade,
+	}
+
+	return &usuario
+
+}
+
+func printUsuario(u User) {
+	fmt.Println(montaObjetoUsuarioValido(u))
+}
+
 // uso
 func main() {
-	reinaldo := User{"Reinaldo", "Zachars", 46} // instanciando
-	fmt.Println(reinaldo.nomeCompleto())
-	reinaldo.fazAniversario()              // fez 47
-	reinaldo.fazAniversario()              // fez 48
+	// reinaldo := User{"REIZAO", "Zachars", 46} // instanciando OK
+	reinaldo := User{"R", "Zachars", 46} // instanciando com ErroProtosital no nome
+	printUsuario(reinaldo)
+	fmt.Println(reinaldo.NomeCompleto())
+	reinaldo.FazAniversario()              // fez 47
+	reinaldo.FazAniversario()              // fez 48
 	fmt.Println(reinaldo)                  // mostra que a idade é 48
-	fmt.Println(reinaldo.ehMaiorDeIdade()) // true
+	fmt.Println(reinaldo.EhMaiorDeIdade()) // true
 }
 
 /*
