@@ -12,7 +12,7 @@ type Foo1 struct {
 }
 
 // a acao foi criada para string qualquer string
-func MinString(n string, min int) string {
+func MinString2(n string, min int) string {
 	if len(n) < min {
 		return fmt.Sprintf("ops menor que %d", min)
 	}
@@ -37,7 +37,7 @@ func (u *Foo1) EhMaiorDeIdade() bool {
 
 func montaObjetoUsuarioValido(u Foo1) *Foo1 {
 	var usuario = Foo1{
-		nome:      MinString(u.nome, 3),
+		nome:      MinString2(u.nome, 3),
 		sobrenome: u.sobrenome,
 		idade:     u.idade,
 	}

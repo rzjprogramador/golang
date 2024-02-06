@@ -1,5 +1,7 @@
 package composicao
 
+import "github.com/rzj/helpers"
+
 type User struct {
 	ID    string
 	Name  string
@@ -9,8 +11,8 @@ type User struct {
 func CreateUser(u User) *User {
 	var validUser = User{
 		ID:    u.ID,
-		Name:  u.Name,
-		Idade: u.Idade,
+		Name:  helpers.MinString(u.Name, 2),
+		Idade: helpers.MinAge(u.Idade, 18),
 	}
 	return &validUser
 }
