@@ -5,7 +5,7 @@ import "fmt"
 // Tipo_Personal_Novo
 
 // estrutura { criar fabrica : [struct, ou classe] }
-type User struct {
+type Foo1 struct {
 	nome      string
 	sobrenome string
 	idade     uint
@@ -20,23 +20,23 @@ func MinString(n string, min int) string {
 }
 
 // acoes { vincular a estrutura }
-func (u User) NomeCompleto() string {
+func (u Foo1) NomeCompleto() string {
 	return fmt.Sprintf("%s %s TEXTO_LIVRE onde Quiser entre as variaveis ", u.nome, u.sobrenome)
 }
 
-func (u *User) FazAniversario() {
+func (u *Foo1) FazAniversario() {
 	u.idade++
 }
 
-func (u *User) EhMaiorDeIdade() bool {
+func (u *Foo1) EhMaiorDeIdade() bool {
 	if u.idade > 18 {
 		return true
 	}
 	return false
 }
 
-func montaObjetoUsuarioValido(u User) *User {
-	var usuario = User{
+func montaObjetoUsuarioValido(u Foo1) *Foo1 {
+	var usuario = Foo1{
 		nome:      MinString(u.nome, 3),
 		sobrenome: u.sobrenome,
 		idade:     u.idade,
@@ -46,14 +46,14 @@ func montaObjetoUsuarioValido(u User) *User {
 
 }
 
-func printUsuario(u User) {
+func printUsuario(u Foo1) {
 	fmt.Println(montaObjetoUsuarioValido(u))
 }
 
 // uso
 func main() {
 	// reinaldo := User{"REIZAO", "Zachars", 46} // instanciando OK
-	reinaldo := User{"R", "Zachars", 46} // instanciando com ErroProtosital no nome
+	reinaldo := Foo1{"R", "Zachars", 46} // instanciando com ErroProtosital no nome
 	printUsuario(reinaldo)
 	fmt.Println(reinaldo.NomeCompleto())
 	reinaldo.FazAniversario()              // fez 47
