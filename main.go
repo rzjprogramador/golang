@@ -12,7 +12,16 @@ func main() {
 		Name:  "Reinaldo",
 		Idade: 46,
 	}
-	createUser1 := composicao.CreateUser(requestUser1)
 
-	fmt.Println(createUser1)
+	var requestUser2 = composicao.User{
+		ID:    "2",
+		Name:  "Leonardo",
+		Idade: 7,
+	}
+	user1 := composicao.CreateUser(requestUser1)
+	user2 := composicao.CreateUser(requestUser2)
+
+	// fmt.Println(user1)
+	fmt.Println(user1.DigaOi())
+	fmt.Println(user2.DigaOi())
 }

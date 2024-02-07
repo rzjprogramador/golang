@@ -92,7 +92,24 @@ atribuicaoAcumulativa com +=, -=, *=, %= ,
 atribuicao_de_funcao: é invocar chamar e argumentar se preciso.,
 
 atribuir_por_Composicao: é no contrato assinalar um campo  com valor de um outro Tipo personalizado e no uso dar como valor o objeto deste tipoPsrsonalizado como valor ao campo sob contrato.
-  ]
+
+ ]
+
+ ## referencia e copia
+ referencia : é a variavel original o que modificar vai modificar direto nela é marcavel como um ponteiro em algumas linguagens como [ Golang, ]
+
+ copia: é quando atrinuimos uma variavel a outra , então esta nova atribuida é uma copia e qualquer mudanca de valor nela nao atinge a original e simm a copia somente, a original só se modifica se for um ponteiro.
+
+
+## SOMADORES E SUBTRAIDORES
+adiciona_mais_um: variavel++ , cada vez que for chamado sera adicionado +1 na variavel que tem que ser um numero, este operador ja torna a variavel um ponteiro por padrao isto é ja modifica diretamente na variavel original e nao em copia.
+
+diminui_menos_um: variavel-- , mesma coisa da adicionadora ja é um ponteiro age direto na referencia.
+
+## ACOES DE OBJETO ENTIDADE
+metodos_prototype: Funcoes ligadas ao estruturador de entidade ( classe, ou struct ) São acoes que manipulam os campos da entidade.   Os campos da entidade sao acessados para configuracao com this. ou em outras linguagens com uma variavel que referencia um ponteiro da estrutura em questao (Em golang fazemso uma funcao normal e antes do nome da funcao entre parenteses referenciamos a variavel que sera o this ao ponteiro da struct)
+
+
 
 # FERRAMENTA PARA FUNCAO
 

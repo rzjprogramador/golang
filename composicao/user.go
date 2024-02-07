@@ -1,6 +1,10 @@
 package composicao
 
-import "github.com/rzj/helpers"
+import (
+	"fmt"
+
+	"github.com/rzj/helpers"
+)
 
 type User struct {
 	ID    string
@@ -8,6 +12,12 @@ type User struct {
 	Idade int
 }
 
+// metodos prototype >> acoes com os campos da entidade
+func (u *User) DigaOi() string {
+	return fmt.Sprintf("O usuario %s disse Oi!", u.Name)
+}
+
+// acoes com a entidade ao todo.
 func CreateUser(u User) *User {
 	var validUser = User{
 		ID:    u.ID,
